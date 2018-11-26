@@ -1,6 +1,6 @@
 #coding: utf-8
 #------------------------------------------------------------
-#  Um programa que recebe qualquer coisa e retorna o seu 
+#  Um programa que recebe qualquer coisa, retornando o seu 
 #  tipo primitivo e todas informações sobre o dado recebido.
 #------------------------------------------------------------
 #  Dissecando uma variável - Exercício #004
