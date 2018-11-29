@@ -18,7 +18,7 @@ km = m / 1000
 
 print('\033[35m---\033[m' * 22)#linha colorida(not important)
 
-print(f'A medida de {m:.2f}m² corresponde a {cm}cm {mm}mm')
+print(f'A medida de {m:.2f}m² corresponde a {cm}cm e {mm}mm')
 
 print('\033[35m---\033[m' * 22)#linha colorida(not important)
 
