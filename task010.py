@@ -7,9 +7,7 @@
 #  Conversor de Moedas - Exercício #010
 #----------------------------------------------------------------
 
-r = float(input('Quanto você quer converter para US$? R$'))
+r = float(input('Quantos reais você quer converter para US$?  R$'))
 
-print('\033[2;36m><\033[m' * 22)
-print(f'Com R${r:.2f} você pode comprar {r/3.20:.2f} US$')
-print('\033[2;36m><\033[m' * 22)
+print(f'Com R${r:.2f} você pode comprar US${r/3.27:.2f}')
 
