@@ -15,7 +15,6 @@ d = num // 10 % 10
 c = num // 100 % 10
 m = num // 1000 % 10
 
-
 print(f'\nAnalisando o número {num}...')
 print('\033[2;36m---\033[m' * 22)# linha decorativa(not important)
 

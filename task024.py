@@ -5,8 +5,8 @@
 #-----------------------------------------------------------------
 #  Verificando as primeiras letras de um texto - Exercício #024
 #-----------------------------------------------------------------
-
 c = str(input('Onde você vive?')).strip().lower()
+
 print(c[:5] == 'santo')
 print() 
 
