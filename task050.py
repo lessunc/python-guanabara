@@ -18,7 +18,7 @@ for n in range(1, 7):
 print('\033[36m---' * 22) #linha decorativa(not important)
 
 if cont < 1:
-	print(f'Nenhum número par foi digitado , não há soma, total: {soma}')
+	print(f'Nenhum número par foi digitado, não há soma, total: {soma}')
 
 else:
 	print(f'Foram digitados {cont} números pares, e a soma entre eles é: {soma}')
