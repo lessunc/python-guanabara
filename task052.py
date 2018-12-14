@@ -12,18 +12,16 @@ for c in range(1, n +1):
 	if n % c == 0:
 		print('\033[1;35m', end='')#printa o número com cor
 		tot+= 1
-
 	else:
 		print('\033[m', end='')#printa o número sem cor
 
 	print(f'{c}', end=' ')
 
-print()
-print(f'\033[mO número {n} foi divisível {tot} vezes..')
+print('\033[m')
+print(f'O número {n} foi divisível {tot} vezes..')
 
 if tot== 2:
 	print('Número Primo!\n')
-
 else:
 	print('Esse Número Não É Primo!\n')
 
