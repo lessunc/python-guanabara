@@ -18,27 +18,27 @@ for c in range(1,5):
 
 	nome = str(input(f'Nome da {c}º pessoa:')).strip().title()
 	idade = int(input('Idade: '))
-	sexo = str(input('Sexo [Fem/Masc]:')).lower()
+	sexo = str(input('Sexo [Fem/Masc]:')).lower()[0]
 	soma += idade
 
-	if c == 1 and sexo in 'masc':
+	if c == 1 and sexo in 'm':
 		older = idade
 		oldername = nome
 
 	else:
-		if idade > older:
+		if idade > older and sexo in 'm':
 			older = idade
 			oldername = nome
 
-		if sexo == 'fem':
+		if sexo == 'f':
 			if idade <= 20:
 				fem += 1
 
-print(f'\033[2;36m---\033[m' *22) #linha colorida decorativa(not important)
+print(f'\033[2;36m---\033[m' *22) #linha colorida(not important)
 
-print(f'A média de idade do grupo é de: {soma / 4}.')
+print(f'A média de idade do grupo é de: {soma / 4}')
 print(f'O homem mais velho tem {older} anos e se chama {oldername}.')
 print(f'Ao todo são {fem} mulheres com menos de 20 anos de idade.')
 
-print(f'\033[2;36m---\033[m' *22) #linha colorida decorativa(not important)
+print(f'\033[2;36m---\033[m' *22) #linha colorida(not important)
 
