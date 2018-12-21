@@ -7,35 +7,29 @@
 #------------------------------------------------------------
 #  Super Progressão Aritmética v3.0 - Exercício #062
 #------------------------------------------------------------
-print('\033[2;36m>> GERADOR DE P.A <<\033[m\n')
+print('\033[35m>> GERADOR DE P.A <<\033[m\n')
 
 pt = int(input('Primeiro termo: '))
 rz = int(input('P.A: '))
 termo = pt
-loop = 1
+cont = 1
 total = 0
 mais = 10
 
-print('\033[2;36m><>\033[m' *22) #linha colorida(not important)
+print('\033[35m><>\033[m' *22) #linha colorida(not important)
 while mais != 0:
 	total += mais
 
-	while loop <= total:
-		print(f'{termo}',end='')
-	
-		if loop < total:
-			print(' - ',end='')
-	
-		else:
-			print('  \033[2;36m <3\n',end ='')
+	while cont <= total:
+		print(f'{termo} - ',end='')
 		
 		termo += rz
-		loop += 1
+		cont += 1
+	print('PAUSA!\033[35m')
 
-	mais = int(input('\nQuantos termos você quer mostrar a mais: \033[m'))
-
-print()	
-print(f'>> Progressão Finalizada com {total} termos mostrados << ')
-print('\033[2;36m><>\033[m' *22) #linha colorida(not important)
+	mais = int(input('\nQuantos termos você quer mostrar a mais [0 para parar]: \033[m'))
+	
+print(f'>> Progressão Finalizada com {total} termos no total << \n ')
+print('\033[35m><>\033[m' *22) #linha colorida(not important)
 
 
