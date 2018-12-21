@@ -16,17 +16,10 @@ loop = 1
 print('\033[2;36m><>\033[m' *22) #linha colorida(not important)
 
 while loop <= 10:
-	print(f'{termo}',end='')
-
-	if loop < 10:
-		print(' - ',end='')
-
-	else:
-		print('  \033[2;36m<3\033[m')
-
+	print(f'{termo} - ',end='')
 	termo += rz
 	loop += 1
-	
+
+print('FIM!') 	
 print('\033[2;36m><>\033[m' *22) #linha colorida(not important)
-print('.. \033[2;36mFIM!\033[m') #(not important)
 
