@@ -5,27 +5,26 @@
 #----------------------------------------------------------
 #  Sequência de Fibonacci v1.0 - Exercício #063
 #----------------------------------------------------------
+from time import sleep
 
-print('\033[35m>> FREQUÊNCIA DE FIBONACCI <<\033[m\n')
-
+print('\033[2;35m>> FREQUÊNCIA DE FIBONACCI <<\033[m\n')
 termo = int(input('Quantos termos você quer mostrar na sequencia: '))
 pt = 0
 st = 1
 loop = 3
 soma = 0
 
-print('\033[35m===\033[m' *22) #linha colorida(not important)
+print('\033[2;35m') #cor
+print(f'{pt} -> {st} -> ',end='', flush = True)
+sleep(0.1)
 
-print(f'{pt} -> {st} ->',end='')
 while loop <= termo:
-
 	soma = pt + st
-	print(f'{soma} ->',end=' ')
-
+	print(f'{soma} -> ',end='', flush = True)
 	pt = st
 	st = soma
 	loop += 1
+	sleep(0.1)
 
-print('FIM!')
-print('\033[35m===\033[m' *22) #linha colorida(not important)
+print('FIM!\033[m')
 
