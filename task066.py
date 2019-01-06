@@ -11,12 +11,11 @@ print('\n\033[35m>>> Digite 999 Para Sair e Receber o Somatório <<<\033[m\n')
 soma = total = 0
 while True:
 	n = int(input('Digite Um Número: '))
-
 	if n == 999:
 		break
 
 	soma += n
 	total += 1
+print(f'\n\033[35mA Soma Dos {total} Valores Foi {soma}.\033[m')
+print()	
 
-print()		
-print(f'\033[35mA Soma Dos {total} Valores Foi {soma}.\033[m\n')
