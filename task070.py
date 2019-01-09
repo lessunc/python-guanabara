@@ -27,13 +27,12 @@ while True:
 		opc = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()[0]
 	if opc == 'N':
 		break
-
+		
 print('{:-^56}'.format('\033[35m FIM DO PROGRAMA \033[m'))# linha decorativa(not important)
 print()
 
 print(f'total = R${total:.2f}')
 print(f'temos {mil} valores custando mais de R$1000.00')
 print(f'O produto mais barato é {cujo} que custa R${menor:.2f}')
-
 print('----' *12)
 
