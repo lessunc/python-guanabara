@@ -30,10 +30,10 @@ while True:
 	if resp == 'N':
 		break
 
-print('\033[35m==\033[m' *22) #linha colorida(not important)
+print('\033[35m==\033[m' *22) #linha decorativa(not important)
 print(f'O total de pessoas com mais de 18 anos é {maior}.')
 print(f'Ao todo temos {m} homens cadastrados.')
 print(f'E temos {wmenor} mulheres menores de 20 anos')
 
-print('\033[35m==\033[m' *22) #linha colorida(not important)
+print('\033[35m==\033[m' *22) #linha decorativa(not important)
 
