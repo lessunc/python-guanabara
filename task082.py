@@ -8,7 +8,6 @@
 l1 = []
 l2 = []
 l3 = []
-
 while True:
 	opc = ' '
 	l1.append(int(input('Digite um número: ')))
@@ -26,7 +25,6 @@ for c in l1:
 
 print(f'\nA lista completa é {l1}')
 print(f'A lista de pares é {l2}')
-print(f'A lista de ímpares é {l3}')
-
+print(f'A lista de ímpares é {l3}\n')
 print('\033[1;34m~~\033[m' *22)# decorativo(not important)
 
