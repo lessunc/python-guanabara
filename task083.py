@@ -7,7 +7,6 @@
 #---------------------------------------------------------------------------------
 expr = str(input('digite uma expressão: '))
 cont = []
-
 for e in expr:
 	if e == '(':
 		cont.append('(')
@@ -15,18 +14,15 @@ for e in expr:
 	elif e == ')':
 		if len(cont) > 0:
 			cont.pop()
-
 		else:
 			cont.append(')')
 			break
 
 print('\033[1;35m~~\033[m' *22)# linha decorativa(not important)
-
 print(f'Sua Expressão: {expr}')
 
 if len(cont) == 0:
 	print('\033[35mEssa Expressão Está Correta!')
-
 else: 
 	print('\033[35mEssa Expressão Está Incorreta!\033[m')
 	print(f'Caracteres excedentes: {cont}')
