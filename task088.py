@@ -1,10 +1,11 @@
 #coding: utf-8
-#---------------------------------------------------------------------
-#  Um programa que recebe um número n, e gera n listas sorteadas com
-#  seis números entre 1 e 60 cadastrando tudo em uma lista composta.
-#---------------------------------------------------------------------
+#------------------------------------------------------------------------
+#  Um programa que recebe um número N, e gera N listas sorteadas com
+#  seis números entre 1 e 60, cadastrando tudo em uma lista composta.
+#  O programa identifica e não adiciociona números repetidos nas listas.
+#------------------------------------------------------------------------
 #  Palpites para a Mega Sena - Exercício #088
-#---------------------------------------------------------------------
+#------------------------------------------------------------------------
 from random import randint
 from time import sleep
 #decorativo(not important)
