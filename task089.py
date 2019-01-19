@@ -6,6 +6,7 @@
 #---------------------------------------------------------------------
 #  Boletim com listas compostas - Exercício #089
 #---------------------------------------------------------------------
+print('> EXERCÍCIO 089 DE PYTHON <\n')
 dados = []
 while True:
 	cont = ' '
@@ -32,7 +33,6 @@ while True:
 	if opc <= len(dados)-1:
 		print(f'\nNotas de {dados[opc][0]}: {dados[opc][1]}')
 		print('---' * 11)
-
 	if opc == 999:
 		print('\n> Volte Sempre <')
 		break

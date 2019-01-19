@@ -16,12 +16,12 @@ print('\033[35m---\033[m' * 14)
 dados = []
 jogos = []
 qtd = int(input('Quantos Jogos Vamos Sortear: '))
-
 print('\n{:^36}'.format(f' SORTEANDO {qtd} JOGOS '))
+
+print('\033[35m---\033[m' * 14)# linha decorativa(not important)
 for c in range(0, qtd):	
 	for q in range(0,6):
 		n = randint(0,60)
-
 		while n in jogos:
 			n = randint(0,60)
 		jogos.append(n)
