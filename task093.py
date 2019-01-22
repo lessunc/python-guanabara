@@ -15,21 +15,23 @@ for c in range(partidas):
 	jogo.append(int(input(f'   • Quantos gols {dic["jogador"]} fez na {c+1}ª partida? ')))
 	dic['gols'] = jogo[:]
 	dic['total'] = sum(jogo)
+
 #primeira opção(formatação do print) 
 print('___' *22) 
-print(f'\033[2;34m {dic} \033[m')
+print(f' {dic} ')
 print('___' *22) 
+
 #segunda opção(formatação do print) 
 for k, v in dic.items():
-	print(f'{k} --- \033[2;34m{v}\033[m')
+	print(f'{k} --- {v}')
+
 #terceira opção(formatação do print)
 print('___' *22)
 print(f'O jogador {dic["jogador"]} jogou {len(dic["gols"])} partidas.')
-#quarta opção(formatação do print)
 for e, j in enumerate(dic['gols']):
 	print(f'   => Na partida {e+1} fez {j} gols.')
 
-print('\033[2;34m')# cor
-print(f'foi um total de {dic["total"]} gols!!!\033[m')
+print(f'\nfoi um total de {dic["total"]} gols!!!')
+print('___' *22)
 
 	
