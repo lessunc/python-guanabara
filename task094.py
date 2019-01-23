@@ -8,7 +8,6 @@
 #-------------------------------------------------------------------------------------
 from time import sleep
 from operator import itemgetter
-
 lista = []
 lidade = []
 
@@ -30,11 +29,9 @@ while True:
 	while True:
 		opc = str(input('\033[35mQuer continuar? [s/n]:\033[m')).lower()[0]
 		print()
-
 		if opc in 'sn':
 			break
 		print('\033[31m>> Erro! Por Favor digite apenas (s) ou (n) <<\033[m')
-
 	if opc == 'n':
 		break
 
@@ -43,7 +40,6 @@ print('\033[35m=-=-\033[m' *16)# linha decorativa(not important)
 
 print(f'Ao todo {len(lista)} Pessoas Foram Cadastradas.')
 print(f'A Média De Idade Do Grupo: {media:.0f}')
-
 print(f'Mulheres Cadastradas: {", ".join(p["nome"] for p in lista if p["sexo"] == "f")}')
 print('Pessoas que estão acima da média: ')
 
@@ -53,7 +49,6 @@ for p in lista:
 		for k, v in p.items():
 			print(f'{k} = {v},', end= ' ')
 		print()	
-
 print('\033[35m=-=-\033[m' *16)# linha decorativa(not important)
 print(f'> FINALIZADO.')
 
