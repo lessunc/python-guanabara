@@ -1,16 +1,15 @@
 #coding: utf-8
-#-------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------
 #  Um programa que recebe em uma lista vários dicionários, contendo cadastrado o
 #  nome, sexo, e idade de várias pessoas e retornando:
 #  • Total de pessoas| • Média de idade| • Lista de mulheres| • Idades acima da média|
-#-------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------
 #  Unindo dicionários e listas - Exercício #094
-#-------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------
 from time import sleep
 from operator import itemgetter
 lista = []
 lidade = []
-
 while True:
 	opc = ' '
 	dic = {}
