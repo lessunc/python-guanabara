@@ -12,7 +12,7 @@ def sorteia(lista):
 	print('\nSorteando 5 valores na lista:', end=' ')
 	for c in range(5):
 		lista.append(randint(1,10))
-		print(c, end=' ', flush=True)
+		print(lista[c], end=' ', flush=True)
 		sleep(0.5)
 	print('PRONTO!')
 
