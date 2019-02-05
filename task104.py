@@ -1,4 +1,11 @@
 #coding: utf-8
+#---------------------------------------------------------------------
+#  Um programa que contém uma função chamada leiaint(), que funciona  
+#  de forma semelhante à função input() do Python, porém fazendo a   
+#  validação para aceitar somente um valor numérico inteiro.
+#---------------------------------------------------------------------
+#  Validando entrada de dados em Python - Exercício #104
+#---------------------------------------------------------------------
 def leiaint(msg):
 	ok = False
 	while True:
